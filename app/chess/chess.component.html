@@ -1,0 +1,107 @@
+<div class="row animated lightSpeedIn">
+  <div class="row">
+    <br />
+    <h3>Play chess!</h3>
+    <h4>Duration: {{seconds}}</h4>  
+  </div>
+
+  <div class="row animated tada" style="margin: 30px 0" (click)="chessboardClicked($event)">
+    <div style="position:relative; width:30px; left:12%;">
+        <div style="height:80px; vertical-align:middle; font-size:50px;">8</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">7</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">6</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">5</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">4</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">3</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">2</div>
+        <div style="height:80px; vertical-align:middle; font-size:50px;">1</div>
+      </div>
+
+    <div class="chessboard mx-auto" style="margin-top:-665px">
+      <!-- 8th -->
+      <div class="cell white rank8 file-a">&#9820;</div>
+      <div class="cell black rank8 file-b">&#9822;</div>
+      <div class="cell white rank8 file-c">&#9821;</div>
+      <div class="cell black rank8 file-d">&#9819;</div>
+      <div class="cell white rank8 file-e">&#9818;</div>
+      <div class="cell black rank8 file-f">&#9821;</div>
+      <div class="cell white rank8 file-g">&#9822;</div>
+      <div class="cell black rank8 file-h">&#9820;</div>
+      <!-- 7th -->
+      <div class="cell black rank7 file-a">&#9823;</div>
+      <div class="cell white rank7 file-b">&#9823;</div>
+      <div class="cell black rank7 file-c">&#9823;</div>
+      <div class="cell white rank7 file-d">&#9823;</div>
+      <div class="cell black rank7 file-e">&#9823;</div>
+      <div class="cell white rank7 file-f">&#9823;</div>
+      <div class="cell black rank7 file-g">&#9823;</div>
+      <div class="cell white rank7 file-h">&#9823;</div>
+      <!-- 6th -->
+      <div class="cell white rank6 file-a"></div>
+      <div class="cell black rank6 file-b"></div>
+      <div class="cell white rank6 file-c"></div>
+      <div class="cell black rank6 file-d"></div>
+      <div class="cell white rank6 file-e"></div>
+      <div class="cell black rank6 file-f"></div>
+      <div class="cell white rank6 file-g"></div>
+      <div class="cell black rank6 file-h"></div>
+      <!-- 5th -->
+      <div class="cell black rank5 file-a"></div>
+      <div class="cell white rank5 file-b"></div>
+      <div class="cell black rank5 file-c"></div>
+      <div class="cell white rank5 file-d"></div>
+      <div class="cell black rank5 file-e"></div>
+      <div class="cell white rank5 file-f"></div>
+      <div class="cell black rank5 file-g"></div>
+      <div class="cell white rank5 file-h"></div>
+      <!-- 4th -->
+      <div class="cell white rank4 file-a"></div>
+      <div class="cell black rank4 file-b"></div>
+      <div class="cell white rank4 file-c"></div>
+      <div class="cell black rank4 file-d"></div>
+      <div class="cell white rank4 file-e"></div>
+      <div class="cell black rank4 file-f"></div>
+      <div class="cell white rank4 file-g"></div>
+      <div class="cell black rank4 file-h"></div>
+      <!-- 3th -->
+      <div class="cell black rank3 file-a"></div>
+      <div class="cell white rank3 file-b"></div>
+      <div class="cell black rank3 file-c"></div>
+      <div class="cell white rank3 file-d"></div>
+      <div class="cell black rank3 file-e"></div>
+      <div class="cell white rank3 file-f"></div>
+      <div class="cell black rank3 file-g"></div>
+      <div class="cell white rank3 file-h"></div>
+      <!-- 2nd -->
+      <div class="cell white rank2 file-a">&#9817;</div>
+      <div class="cell black rank2 file-b">&#9817;</div>
+      <div class="cell white rank2 file-c">&#9817;</div>
+      <div class="cell black rank2 file-d">&#9817;</div>
+      <div class="cell white rank2 file-e">&#9817;</div>
+      <div class="cell black rank2 file-f">&#9817;</div>
+      <div class="cell white rank2 file-g">&#9817;</div>
+      <div class="cell black rank2 file-h">&#9817;</div>
+      <!-- 1st -->
+      <div class="cell black rank1 file-a">&#9814;</div>
+      <div class="cell white rank1 file-b">&#9816;</div>
+      <div class="cell black rank1 file-c">&#9815;</div>
+      <div class="cell white rank1 file-d">&#9813;</div>
+      <div class="cell black rank1 file-e">&#9812;</div>
+      <div class="cell white rank1 file-f">&#9815;</div>
+      <div class="cell black rank1 file-g">&#9816;</div>
+      <div class="cell white rank1 file-h">&#9814;</div>
+      <!-- Footer -->
+      <div style="position:relative; top:26px">
+          <div class="white">A</div>
+          <div class="white">B</div>
+          <div class="white">C</div>
+          <div class="white">D</div>
+          <div class="white">E</div>
+          <div class="white">F</div>
+          <div class="white">G</div>
+          <div class="white">H</div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-bottom:60px"></div>
+</div>
