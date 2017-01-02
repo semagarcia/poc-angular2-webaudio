@@ -37,7 +37,9 @@ $> npm start
 ```
 - Open the browser: write the url: https://localhost:3000
 - Grant permissions:
-[GrantPermissions]()
+
+![GrantPermissions](https://github.com/semagarcia/poc-angular2-webaudio/raw/master/screenshot/grant-permissions.png "Grant permissions")
+
 - Test it!: Let's go and start to speak!
 
 ## Other purpose ot that PoC
