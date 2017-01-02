@@ -2,8 +2,9 @@
 PoC made with Angular2 in order to navigate through the app by voice commands
 
 ## Description
-This proof-of-concept is developed on top of the library [artyom.js](https://github.com/asdf) in order to ilustrate the
-combination of Angular2 as platform and the navigation through voice commands. The app has been splitted in these sections:
+This proof-of-concept is developed on top of the library [artyom.js](https://github.com/sdkcarlos/artyom.js) in order to 
+ilustrate the combination of Angular2 as platform and the navigation through voice commands. The app has been splitted in 
+these sections:
 - Home: the main view, in which we can see the minimal navigation bar (to navigate in normal mode with the mouse) and the
     description of the voice commands.
 - Section 1: a section/view called "left component".
