@@ -35,7 +35,7 @@ $> npm install
 ```bash
 $> npm start
 ```
-- Open the browser: write the url: https://localhost:3000
+- Open the browser: write the url: https://localhost:4500
 - Grant permissions:
 
 ![GrantPermissions](https://github.com/semagarcia/poc-angular2-webaudio/raw/master/screenshot/grant-permissions.png "Grant permissions")

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --progress --profile --colors --display-error-details --display-cached",
     "clean": "rimraf ./build ./dist",
-    "start": "webpack-dev-server --watch --hot --inline --colors --port 3000 --content-base ./app"
+    "start": "webpack-dev-server --watch --hot --inline --colors --port 4500 --content-base ./app"
   },
   "author": "Sema García (José Manuel García) <jmanuelgarciagarcia@gmail.com>",
   "license": "ISC",
