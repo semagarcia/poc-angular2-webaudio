@@ -5,7 +5,7 @@ import { Artyom } from './artyom';
 @Component({
   selector: 'my-app',
   template: `
-    <h1>Hello Angular!</h1><br />
+    <p><h1>Hello AngularVoice!</h1></p><br />
     <a [routerLink]="['/']">Home</a> |
     <a [routerLink]="['/comp-left']">Left component</a> |
     <a [routerLink]="['/comp-right']">Right component</a> |
