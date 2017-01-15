@@ -1,25 +1,36 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Artyom } from './artyom';
+
+import * as Artyom from 'artyom.js';  // Option A
+//import { ArtyomBuilder } from 'artyom.js';  // Option B
+
 
 @Component({
   selector: 'my-app',
   template: `
-    <p><h1>Hello AngularVoice!</h1></p><br />
-    <a [routerLink]="['/']">Home</a> |
-    <a [routerLink]="['/comp-left']">Left component</a> |
-    <a [routerLink]="['/comp-right']">Right component</a> |
-    <a [routerLink]="['/questions']">Questions?</a> |
-    <a [routerLink]="['/thanks']">Thanks</a>
-    <br />
-    <router-outlet></router-outlet>
+    <div class="row" style="margin-top:12px">
+      <h1>Hello AngularVoice!</h1>
+    </div>
+
+    <div class="row">
+      <a [routerLink]="['/']">Home</a>&nbsp;|&nbsp;
+      <a [routerLink]="['/comp-left']">Left component</a>&nbsp;|&nbsp; 
+      <a [routerLink]="['/comp-right']">Right component</a>&nbsp;|&nbsp;
+      <a [routerLink]="['/questions']">Questions?</a>&nbsp;|&nbsp;
+      <a [routerLink]="['/thanks']">Thanks</a>
+    </div>
+
+    <div class="row" style="margin-top:12px">
+      <router-outlet></router-outlet>
+    </div>
   `
 })
 export class AppComponent {
 
   constructor(private router: Router) {
-    let artyom = Artyom.getInstance();
-
+    let artyom = Artyom.ArtyomBuilder.getInstance();  // Option A
+    //let artyom = ArtyomBuilder.getInstance();  // Option B
+    
     // Go to home
     artyom.addCommands({
       indexes: ["Go home"], 
@@ -68,6 +79,7 @@ export class AppComponent {
 
     artyom.initialize({
      lang: 'en-GB',  // More languages are documented in the library (default: en-GB)
+     soundex: true,  // Use the soundex algorithm to increase accuracy
      continuous: true,  //if you have https connection, you can activate continuous mode
      debug: true,  //Show everything in the console
      listen: true  // Start listening when this function is triggered
